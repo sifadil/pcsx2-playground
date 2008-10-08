@@ -6,7 +6,8 @@ This page will try and answer the most of the common questions asked regarding P
 
 === 1. What is PCSX2-Playground? ===
 
-PCSX2-Playground is a PlayStation 2 emulator for the PC, based off the source of [http://pcsx2.svn.sourceforge.net/viewvc/pcsx2/pcsx2/ official pcsx2 build].
+PCSX2-Playground is an attempt to improve on PCSX2, a PlayStation 2 emulator for the PC.
+Its based on [http://pcsx2.svn.sourceforge.net/viewvc/pcsx2/?pathrev=384 PCSX2 SVN revision 384].
 
 === 2. Why won't game XYZ work? ===
 
@@ -27,3 +28,12 @@ Explanations of DaZ and FtZ can be found here (it's actually not too hard to rea
 Anyways, FPU behavior is inherently touchy due to the very nature of floating precision (IEEE standards or not).  Even a subtle change to an order of operations can cause code to come to a slightly different result, and it's inevitable that a recompiled emulation of a PS2's fpu is going to be doing things a little differently than the PS2 itself, even with full IEEE compliance enabled.  The DaZ hack can either amplify those slight inaccuracies *or* it can also hide them too at times depending on how a particular game in question utilizes it's FPU calculations, which really adds to confusion.
 
 This is why the PCSX2 team can't put any specific time or effort into improving compatibility around the DaZ hack.  Any and every time they make improvements to the FPU recompilers, there's a good chance that the behavior of games under the DaZ hack will change and, *most importantly* there's no way to know which games it will affect positively or negatively.  If they put work into fixing one game to work with DaZ better it's quite likely many others will not work as well, and that's not really the kind of progress any of us want.
+
+=== 3. Why all those speedhacks? ===
+
+One of the biggest problems with PCSX2 is the differences between x86 and the various PS2 processors.
+The original version has a few workarounds, but those break quite a lot of games.
+
+With PCSX2-Playground these workarounds are now handled properly (more or less), but this in turn can make the emulator very slow, especially in 3D.
+
+We added the hacks to give users the option to play the games that don't need special checks fast.
