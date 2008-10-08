@@ -1,0 +1,29 @@
+= PCSX2-Playground Frequently Asked Questions. =
+
+== Introduction ==
+
+This page will try and answer the most of the common questions asked regarding PCSX2-Playground.
+
+=== 1. What is PCSX2-Playground? ===
+
+PCSX2-Playground is a PlayStation 2 emulator for the PC, based off the source of [http://pcsx2.svn.sourceforge.net/viewvc/pcsx2/pcsx2/ official pcsx2 build].
+
+=== 2. Why won't game XYZ work? ===
+
+PCSX2-Playground is a work-in-progress, so obviously a lot of games won't work, or will have problems.
+
+For a rough-guide of what games should work, try visiting the Official PCSX2's [http://www.pcsx2.net/compat.php?c=key Compatibility List].
+
+=== 3. Why does DaZ (Denormals are Zero) break my game! Can you fix it!? ===
+
+The short answer is that nothing can be done about this; DaZ either works or it doesn't work.
+
+*Jake Stine* answered this question more in-depth:
+
+FPU behavior is inherently quirky.  Many CPUs (most notably anything Intel) offer up various modes of operation that don't fully adhere to the IEEE standard in exchange for speed-ups.  Indeed, they are effectively cpu-level built-in speed hacks.  DaZ is one of these hacks.
+
+Explanations of DaZ and FtZ can be found here (it's actually not too hard to read even if you're not very tech-savvy):  http://software.intel.com/en-us/articles/x87-and-sse-floating-point-assists-in-ia-32-flush-to-zero-ftz-and-denormals-are-zero-daz
+
+Anyways, FPU behavior is inherently touchy due to the very nature of floating precision (IEEE standards or not).  Even a subtle change to an order of operations can cause code to come to a slightly different result, and it's inevitable that a recompiled emulation of a PS2's fpu is going to be doing things a little differently than the PS2 itself, even with full IEEE compliance enabled.  The DaZ hack can either amplify those slight inaccuracies *or* it can also hide them too at times depending on how a particular game in question utilizes it's FPU calculations, which really adds to confusion.
+
+This is why the PCSX2 team can't put any specific time or effort into improving compatibility around the DaZ hack.  Any and every time they make improvements to the FPU recompilers, there's a good chance that the behavior of games under the DaZ hack will change and, *most importantly* there's no way to know which games it will affect positively or negatively.  If they put work into fixing one game to work with DaZ better it's quite likely many others will not work as well, and that's not really the kind of progress any of us want.
