@@ -29,7 +29,7 @@ Anyways, FPU behavior is inherently touchy due to the very nature of floating pr
 
 This is why the PCSX2 team can't put any specific time or effort into improving compatibility around the DaZ hack.  Any and every time they make improvements to the FPU recompilers, there's a good chance that the behavior of games under the DaZ hack will change and, *most importantly* there's no way to know which games it will affect positively or negatively.  If they put work into fixing one game to work with DaZ better it's quite likely many others will not work as well, and that's not really the kind of progress any of us want.
 
-=== 3. Why all those speedhacks? ===
+=== 4. Why all those speedhacks? ===
 
 One of the biggest problems with PCSX2 is the differences between x86 and the various PS2 processors.
 The original version has a few workarounds, but those break quite a lot of games.
