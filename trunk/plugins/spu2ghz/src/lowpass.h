@@ -15,22 +15,13 @@
 //License along with this library; if not, write to the Free Software
 //Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
+#pragma once
 
-#ifndef DEBUG_H_INCLUDED
-#define DEBUG_H_INCLUDED
+typedef struct IIR_data
+{
+	double coef[9];
+	double d[4];
+} LPF_data;
 
-extern FILE *spu2Log;
-
-void FileLog(const char *fmt, ...);
-void ConLog(const char *fmt, ...);
-
-void DoFullDump();
-
-extern int wavedump_ok;
-
-int wavedump_open();
-void wavedump_close();
-void wavedump_write(s16 left,s16 right);
-
-
-#endif // DEBUG_H_INCLUDED //
+void LPF_init(LPF_data*lpf,double freq, double srate);
+double LPF(LPF_data* lpf, double in);
