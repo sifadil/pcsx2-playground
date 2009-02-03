@@ -27,7 +27,7 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(SolutionDir)\common\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\&quot; &quot;$(SolutionDir)common&quot;"
+				CommandLine=".\tsvnrev\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\..\&quot; &quot;$(ProjectDir)\tsvnrev&quot;"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -55,7 +55,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;$(SolutionDir)\common&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;..\common&quot;"
 				PreprocessorDefinitions="NDEBUG;__WIN32__;__MSCW32__;WIN32;_WINDOWS;_USRDLL;SPU2GHZ_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -133,7 +133,7 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(SolutionDir)\common\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\&quot; &quot;$(SolutionDir)common&quot;"
+				CommandLine=".\tsvnrev\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\..\&quot; &quot;$(ProjectDir)\tsvnrev&quot;"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -156,7 +156,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;$(SolutionDir)\common&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;..\common&quot;"
 				PreprocessorDefinitions="_DEBUG;__WIN32__;__MSCW32__;WIN32;_WINDOWS;_USRDLL;SPU2GHZ_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -232,7 +232,7 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(SolutionDir)\common\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\&quot; &quot;$(SolutionDir)common&quot;"
+				CommandLine=".\tsvnrev\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\..\&quot; &quot;$(ProjectDir)\tsvnrev&quot;"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -260,7 +260,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;$(SolutionDir)\common&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;..\common&quot;"
 				PreprocessorDefinitions="NDEBUG;PUBLIC;__WIN32__;__MSCW32__;WIN32;_WINDOWS;_USRDLL;SPU2GHZ_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -342,7 +342,7 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(SolutionDir)\common\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\&quot; &quot;$(SolutionDir)common&quot;"
+				CommandLine=".\tsvnrev\updateRevision.cmd &quot;SubWCRev.exe&quot; &quot;$(ProjectDir)\..\&quot; &quot;$(ProjectDir)\tsvnrev&quot;"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -365,7 +365,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;$(SolutionDir)\common&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)&quot;;&quot;..\common&quot;"
 				PreprocessorDefinitions="_DEBUG_FAST;_DEBUG;__WIN32__;__MSCW32__;WIN32;_WINDOWS;_USRDLL;SPU2GHZ_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -438,7 +438,7 @@
 			Filter="h;hpp;cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\utf8.cpp"
+				RelativePath="..\utf8.cpp"
 				>
 				<FileConfiguration
 					Name="Devel|Win32"
@@ -458,22 +458,14 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\utf8.h"
+				RelativePath="..\utf8.h"
 				>
 			</File>
 			<Filter
 				Name="mixer"
 				>
 				<File
-					RelativePath=".\lowpass.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\lowpass.h"
-					>
-				</File>
-				<File
-					RelativePath=".\mixer.cpp"
+					RelativePath="..\mixer.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -526,7 +518,7 @@
 				Name="debug"
 				>
 				<File
-					RelativePath=".\debug.cpp"
+					RelativePath="..\debug.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -572,7 +564,7 @@
 					>
 				</File>
 				<File
-					RelativePath=".\spu2replay.cpp"
+					RelativePath="..\spu2replay.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -592,11 +584,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath=".\spu2replay.h"
+					RelativePath="..\spu2replay.h"
 					>
 				</File>
 				<File
-					RelativePath=".\wavedump_wav.cpp"
+					RelativePath="..\wavedump_wav.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -620,7 +612,7 @@
 				Name="Output Modules"
 				>
 				<File
-					RelativePath=".\sndout.cpp"
+					RelativePath="..\sndout.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -670,7 +662,7 @@
 					Name="waveOut"
 					>
 					<File
-						RelativePath=".\waveout.cpp"
+						RelativePath="..\waveout.cpp"
 						>
 						<FileConfiguration
 							Name="Devel|Win32"
@@ -737,62 +729,62 @@
 				Name="decoder"
 				>
 				<File
-					RelativePath=".\decoder.cpp"
+					RelativePath="..\decoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\spdif.h"
+					RelativePath="..\spdif.h"
 					>
 				</File>
 				<Filter
 					Name="ac3(a/52)"
 					>
 					<File
-						RelativePath=".\liba52\a52.h"
+						RelativePath="..\3rdparty\liba52\a52.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\a52_internal.h"
+						RelativePath="..\3rdparty\liba52\a52_internal.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\attributes.h"
+						RelativePath="..\3rdparty\liba52\attributes.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\bit_allocate.c"
+						RelativePath="..\3rdparty\liba52\bit_allocate.c"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\bitstream.c"
+						RelativePath="..\3rdparty\liba52\bitstream.c"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\bitstream.h"
+						RelativePath="..\3rdparty\liba52\bitstream.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\downmix.c"
+						RelativePath="..\3rdparty\liba52\downmix.c"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\imdct.c"
+						RelativePath="..\3rdparty\liba52\imdct.c"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\mm_accel.h"
+						RelativePath="..\3rdparty\liba52\mm_accel.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\parse.c"
+						RelativePath="..\3rdparty\liba52\parse.c"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\tables.h"
+						RelativePath="..\3rdparty\liba52\tables.h"
 						>
 					</File>
 					<File
-						RelativePath=".\liba52\tendra.h"
+						RelativePath="..\3rdparty\liba52\tendra.h"
 						>
 					</File>
 				</Filter>
@@ -801,7 +793,7 @@
 				Name="dma"
 				>
 				<File
-					RelativePath=".\dma.cpp"
+					RelativePath="..\dma.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -857,7 +849,7 @@
 					>
 				</File>
 				<File
-					RelativePath="SPU2ghz.def"
+					RelativePath=".\SPU2ghz.def"
 					>
 				</File>
 				<File
@@ -869,19 +861,19 @@
 				Name="system"
 				>
 				<File
-					RelativePath="defs.h"
+					RelativePath="..\defs.h"
 					>
 				</File>
 				<File
-					RelativePath="regs.h"
+					RelativePath="..\regs.h"
 					>
 				</File>
 				<File
-					RelativePath=".\regtable.h"
+					RelativePath="..\regtable.h"
 					>
 				</File>
 				<File
-					RelativePath=".\spu2.cpp"
+					RelativePath="..\spu2.cpp"
 					>
 					<FileConfiguration
 						Name="Devel|Win32"
@@ -998,91 +990,91 @@
 				Name="SoundTouch"
 				>
 				<File
-					RelativePath=".\SoundTouch\3dnow_win.cpp"
+					RelativePath="..\3rdparty\SoundTouch\3dnow_win.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\AAFilter.cpp"
+					RelativePath="..\3rdparty\SoundTouch\AAFilter.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\AAFilter.h"
+					RelativePath="..\3rdparty\SoundTouch\AAFilter.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\BPMDetect.h"
+					RelativePath="..\3rdparty\SoundTouch\BPMDetect.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\cpu_detect.h"
+					RelativePath="..\3rdparty\SoundTouch\cpu_detect.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\cpu_detect_x86_win.cpp"
+					RelativePath="..\3rdparty\SoundTouch\cpu_detect_x86_win.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\FIFOSampleBuffer.cpp"
+					RelativePath="..\3rdparty\SoundTouch\FIFOSampleBuffer.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\FIFOSampleBuffer.h"
+					RelativePath="..\3rdparty\SoundTouch\FIFOSampleBuffer.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\FIFOSamplePipe.h"
+					RelativePath="..\3rdparty\SoundTouch\FIFOSamplePipe.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\FIRFilter.cpp"
+					RelativePath="..\3rdparty\SoundTouch\FIRFilter.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\FIRFilter.h"
+					RelativePath="..\3rdparty\SoundTouch\FIRFilter.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\mmx_optimized.cpp"
+					RelativePath="..\3rdparty\SoundTouch\mmx_optimized.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\RateTransposer.cpp"
+					RelativePath="..\3rdparty\SoundTouch\RateTransposer.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\RateTransposer.h"
+					RelativePath="..\3rdparty\SoundTouch\RateTransposer.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\SoundTouch.cpp"
+					RelativePath="..\3rdparty\SoundTouch\SoundTouch.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\SoundTouch.h"
+					RelativePath="..\3rdparty\SoundTouch\SoundTouch.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\sse_optimized.cpp"
+					RelativePath="..\3rdparty\SoundTouch\sse_optimized.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\STTypes.h"
+					RelativePath="..\3rdparty\SoundTouch\STTypes.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\TDStretch.cpp"
+					RelativePath="..\3rdparty\SoundTouch\TDStretch.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\TDStretch.h"
+					RelativePath="..\3rdparty\SoundTouch\TDStretch.h"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\WavFile.cpp"
+					RelativePath="..\3rdparty\SoundTouch\WavFile.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\SoundTouch\WavFile.h"
+					RelativePath="..\3rdparty\SoundTouch\WavFile.h"
 					>
 				</File>
 			</Filter>
@@ -1091,19 +1083,15 @@
 			Name="Documents"
 			>
 			<File
-				RelativePath=".\CHANGELOG.TXT"
+				RelativePath="..\..\CHANGELOG.TXT"
 				>
 			</File>
 			<File
-				RelativePath="LGPL.txt"
+				RelativePath="..\..\LGPL.txt"
 				>
 			</File>
 			<File
-				RelativePath="License.txt"
-				>
-			</File>
-			<File
-				RelativePath=".\TODO.txt"
+				RelativePath="..\..\License.txt"
 				>
 			</File>
 		</Filter>
